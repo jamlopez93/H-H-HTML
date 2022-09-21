@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="paginadeinicio"><img src="" alt=""></a>
+    <h1>House & Health - Médico</h1>
+    <div class="barranav">
+        <a href="#inicio">Inicio</a>
+    </div> 
+    
+    <button type="button">Cerrar sesión</button>
+    <h2>Bienvenido Médico</h2>
+    <div class="tab">
+        <button class="tablinks" onclick="abrirOpcion(event, 'Consulta')">Consultar paciente</button>
+        <button class="tablinks" onclick="abrirOpcion(event, 'Registro')">Registrar paciente</button>
+        
+      </div>
+
+      <div id="consultaPac" class="tabcontent">
+        <h3>Registro de signos vitales</h3>
+        <form>
+            <label>Nombre:</label><br>
+            <input type="text" id="pacNom" name="pacNom"><br>
+            <label>id:</label><br>
+            <input type="date" id="idPac" name="idPac"><br>
+            <label>C.C:</label><br>
+            <input type="text" id="cedula" name="cedula"><br>
+            <input type="submit" value="Consultar">
+          </form> 
+      </div>
+      
+      <div id="registroPac" class="tabcontent">
+        <h3>Registrar paciente</h3>
+        <label>C.C:</label><br>
+        <input type="text" id="cedula" name="cedula"><br>
+        <label>Nombre completo:</label><br>
+        <input type="text" id="nomPac" name="nomPac"><br>
+        <label>Dirección:</label><br>
+        <input type="text" id="direccion" name="direccion"><br>
+        <label>Telefono:</label><br>
+        <input type="text" id="telefono" name="telefono"><br>
+        <label>Familiar contaco:</label><br>
+        <input type="text" id="fConta" name="fConta"><br>
+        <label>Teléfono familiar:</label><br>
+        <input type="text" id="telFami" name="telFami"><br><br>
+        <input type="submit" value="Registrar">
+      </div>  
+</body>
+</html>

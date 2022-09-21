@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="paginadeinicio"><img src="" alt=""></a>
+    <h1>House & Health</h1>
+    <div class="barranav">
+        <a href="#inicio">Inicio</a>
+    </div> 
+    
+    <button type="button">Cerrar sesión</button>
+    <h2>Bienvenido paciente</h2>
+    <div class="tab">
+        <button class="tablinks" onclick="abrirOpcion(event, 'Consulta')">Consulta</button>
+        <button class="tablinks" onclick="abrirOpcion(event, 'Registro')">Registro</button>
+        <button class="tablinks" onclick="abrirOpcion(event, 'Actualizacion')">Actualizacion</button>
+      </div>
+      
+      <div id="Consulta" class="tabcontent">
+        <h3>Consulta</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam sed quaerat unde nulla illo doloribus itaque ullam inventore minima aliquam, molestiae, suscipit aut accusantium aspernatur? Totam pariatur optio iure assumenda.</p>
+      </div>
+      
+      <div id="Registro" class="tabcontent">
+        <h3>Registro de signos vitales</h3>
+        <form>
+            <label>Id registro:</label><br>
+            <input type="text" id="idname" name="idname"><br>
+            <label>Fecha:</label><br>
+            <input type="date" id="fecha" name="fecha"><br>
+            <label>Oximetria:</label><br>
+            <input type="text" id="Oximetria" name="Oximetria"><br>
+            <label>Frecuencia cardiaca:</label><br>
+            <input type="text" id="fCardia" name="fCardia"><br>
+            <label>Temperatura:</label><br>
+            <input type="text" id="Temperatura" name="Temperatura"><br>
+            <label>Presion arterial:</label><br>
+            <input type="text" id="pArte" name="pArte"><br>
+            <label>Glicemia:</label><br>
+            <input type="text" id="glicemia" name="glicemia"><br><br>
+            <input type="submit" value="Registrar datos">
+          </form> 
+      </div>
+      
+      <div id="Actualizacion" class="tabcontent">
+        <h3>Actualiza tus datos</h3>
+        <label>Nombre completo:</label><br>
+        <input type="text" id="Nombre" name="Nombre"><br>
+        <label>Dirección:</label><br>
+        <input type="text" id="dire" name="dire"><br>
+        <label>Teléfono:</label><br>
+        <input type="text" id="tel" name="tel"><br>
+        <label>Familiar contaco:</label><br>
+        <input type="text" id="fConta" name="fConta"><br>
+        <label>Teléfono familiar:</label><br>
+        <input type="text" id="telFami" name="telFami"><br>
+        <input type="submit" value="Actualizar">
+      </div> 
+</body>
+</html>
